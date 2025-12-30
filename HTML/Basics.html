@@ -18,14 +18,56 @@
 </body>
 </html>
 
+<!-- Want to learn More -- Checkout below resources
+     https://developer.mozilla.org/en-US/
+     https://www.w3schools.com/html/default.asp
+     https://drive.google.com/file/d/1rrEnoARH5hi_ECiHqltxaGVkvePi5hi7/view?usp=sharing/edit?usp=sharing&ouid=114162002956526293509&rtpof=true&sd=true
+-->
 
 
 <!-- ################  NOTES ################ -->
- 
+
 <!-- 
+    ## <!DOCTYPE html> ==> Tells Browser, “This is an HTML5 document. Please render it using modern web standards.
+        tells the browser to use modern, standard-compliant rendering instead of legacy behavior.
+                Standards Mode → actual width = 240px
+                Quirks Mode → actual width = 200px (unexpected) => To support very old websites (1990s–early 2000s)
+                    Problems in quirks mode:
+                        CSS box model is broken (width includes padding + border)
+                        Margins and padding behave inconsistently
+                        Layouts can break across browsers
+                        Flexbox/Grid may act unpredictably
+
     ## HTML Boilerplate <html> <head></head> <body></body></html>
-    
-    ## Tags -- (keywords present in Angular brackets <> )
+    ## <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        The `viewport` meta tag tells the browser how to control the page’s dimensions and scaling, especially on mobile devices.
+            Sets the visible area (viewport) of a web page
+            Controls zoom level and scaling
+            Makes the page responsive on different screen sizes
+                📌 Key Properties Explained
+                    Property	        Meaning
+                    width=device-width	Page width matches the device screen width
+                    initial-scale=1.0	Default zoom level
+                    maximum-scale	    Maximum zoom allowed
+                    minimum-scale	    Minimum zoom allowed
+                    user-scalable	    Allows/disallows zooming
+            
+            📌 Meta Tag — name Attribute Values
+            The name attribute in the <meta> tag specifies what kind of information (metadata) is being provided about the webpage.
+            | ------------------ | ---------------------------------------------- |
+            | `name` Value       | Purpose                                        |
+            | ------------------ | ---------------------------------------------- |
+            | `viewport`         | Controls page layout on different devices      |
+            | `description`      | Short summary of the webpage                   |
+            | `keywords`         | Keywords related to the page (mostly obsolete) |
+            | `author`           | Name of the page author                        |
+            | `robots`           | Instructions for search engines                |
+            | `application-name` | Name of the web application                    |
+            | `generator`        | Tool used to create the page                   |
+            | `theme-color`      | Sets browser UI color on mobile                |
+            | ------------------ | ---------------------------------------------- |
+
+    ## Tags -- (keywords present in Angular brackets <> ) Tags are case-insensitive
         # Singleton Tags
             <br> line break
             <img>, <hr>
@@ -38,12 +80,44 @@
             Ex: <start_tag> + content + </end_tag> collectively known as an ELEMENT
         
     ## LISTS -- objects/item enclosed in <li></li> tag
-        # Ordered List <ol> </ol>
-        # Unordered List <ul> </ul>
+        # Ordered List 
+            <ol> 
+                <li></li>
+            </ol>
+        # Unordered List 
+            <ul> 
+                <li></li>
+            </ul>
+        # Description List 
+            <dl> 
+                <dt></dt>
+                <dd></dd> 
+            </dl>
+            <dt> — Description Term      ==> One <dt> can have one or more <dd>
+            <dd> — Description Details
+                🔹 Common use  :
+                        Definitions
+                        Glossaries
+                        FAQs
+                        Key–value pairs (Label → Value)
     
     ## Attributes -- additional details for the content present in start tag
                 Tag     - Attribute
                 <ol>    - type (a,A,I,i, 1 is default) 
+                <img>   - src (required link-copy image address/image path)
+                          height, width in pixels
+                <a>     - href (hyper link reference in Anchor tag), target, hreflang
+                            Ex : href =link or "#" "#top" navigates to top of web page
+                            Ex : target (_self, _top, _blank, _parent)
+                            | --------- | ------------------- |
+                            | Target    | Opens Link In       |
+                            | --------- | ------------------- |
+                            | `_self`   | Same frame/tab      | 
+                            | `_parent` | Parent frame        | 
+                            | `_top`    | Full browser window | Break out of all frames - not used
+                            | `_blank`  | New tab/window      |
+                            ⚠️ A frame is an old HTML concept that allowed a browser window to be split into multiple sections, each loading a different page.
+                            🔴 Frames are deprecated and should not be used in modern websites.
     
 -->
 
@@ -55,12 +129,12 @@
                 However, in Head Section only on whole element
                 Ex: comment on one word - not possible in head tag ~ <title> _<_!--First Web --_>_ Page</title> 
 
-    Emmet Abbreviation shortcut -- ! esclamation with Enter 
+    Emmet Abbreviation shortcut -- ! esclamation with Enter in VS Code
     
     lorem command or lorem+n, n is number ex: lorem10
     lipsum.com website
 
-    wrap text in VS code -- ALT+X
+    wrap text in VS code -- ALT+Z
 
     SEO friendly - HTML elements and attriburtes that provide search engines(like Google) and users 
                     crucial information about the page's content.
