@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on HTML</title>
+</head>
+<body>
+
+  <header>
+    <h1>My Website</h1>
+    <p>BLOCK AND INLINE ELEMENTS</p>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#copyRight">Copyright</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section>
+      <h2 id="about">About Us</h2>
+      <p>This section explains what our website is about.</p>
+    </section>
+
+    <section>
+      <h2>Blog</h2>
+
+      <article>
+        <h3>First Blog Post</h3>
+        <p>This is the content of the first blog post.</p>
+
+        <figure>
+          <img src="image.jpg" alt="Sample image">
+          <figcaption>Image description</figcaption>
+        </figure>
+      </article>
+
+      <article>
+        <h3>Second Blog Post</h3>
+        <p>This is the content of the second blog post.</p>
+      </article>
+
+    </section>
+
+  </main>
+
+  <aside>
+    <h3>Related Links</h3>
+    <p>Extra information or advertisements.</p>
+  </aside>
+
+  <footer id="copyRight">
+    <p>&copy; 2026 My Website</p>
+  </footer>
+
+</body>
+</html>
+
+
+<!--  BLOCK AND INLINE ELEMENTS   -->
+
+<!-- 
+    # BLOCK ELEMENTS
+        Elements that covers entire horizontal space
+        EX:
+            <h1></h1> <h6></h6> all heading tags
+            <div> </div>
+            <p> </p>
+            <ul> </ul> , <ol> </ol>
+            <hr>
+            <nav> </nav>
+
+    # INLINE ELEMENTS
+        Elements that doesn't covers entire horizontal space, hence they are place side by side
+            EX:
+                <img>
+                <a>
+                <span>
+    
+    # SEMANTIC TAGS -- Tags with Meanings
+        Semantic tags in HTML are elements that clearly describe their meaning in a way that both 
+        the browser and the developer can understand. These tags provide a more meaningful structure
+        to the web content, enhancing accessibility, SEO ranking, and overall user experience.
+        EX :
+           - header : Represents introductory content for a page or section. Typically contains a logo, heading, navigation, or search bar.
+           - nav    : Navigation (Section which has links to the other parts of the web page)
+           - main   : Represents the main, central content of the document. There should be only one <main> per page, and it should not be inside <header>, <footer>, <nav>, or <aside>.
+           - aside  : Contains content that is related but not central to the main content. Examples: sidebars, ads, author info, related links.
+           - section: A section is a thematic grouping of content, typically with a heading.
+           - article: small part of web page. Article tag specifies independent, self-contained content.
+           - footer : Represents footer content for a page or section. Commonly contains copyright info, author details, links, or legal text.
+           - figure : Used to group media content (images, diagrams, code snippets). Often paired with <figcaption> to provide a caption.
+           - p      : paragraph (text)
+           
+           🧠 Easy rule to remember
+            👉 If the content can exist on its own → use <article>
+            👉 If it groups related content → use <section>
+                One-line comparison:
+                    Section	   vs     Article
+                    Groups content	| Standalone content
+                    Depends on page	| Independent
+                    Needs heading	| Reusable
+
+-->
