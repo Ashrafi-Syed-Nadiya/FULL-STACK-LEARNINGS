@@ -43,6 +43,33 @@
 
     </section>
 
+    <section id="special_Symbols">
+        <p> less than &lt;</p>
+        <p> Greater than &gt;</p>
+        <p> Greater than Equals to  &ge;</p>
+        <p> less than Equals to &le;</p>
+        <p>Normal: "Hello World"</p>
+        <p>Non-breaking: "Hello&nbsp;World"</p>
+        <p>En space: "Hello&ensp;World"</p>
+        <p>Em space: "Hello&emsp;World"</p>
+        <p>Thin space: "Hello&thinsp;World"</p>
+        
+        <p> Demonstrate space using Inline elements</p>
+        <img src="https://cdn.photographylife.com/wp-content/uploads/2014/06/Nikon-D810-Image-Sample-6.jpg" height="50px" weight="50px">
+        &nbsp;
+        <img src="https://cdn.photographylife.com/wp-content/uploads/2014/06/Nikon-D810-Image-Sample-6.jpg" height="50px" weight="50px">
+        &emsp;
+        <img src="https://cdn.photographylife.com/wp-content/uploads/2014/06/Nikon-D810-Image-Sample-6.jpg" height="50px" weight="50px">
+        &ensp;
+        <img src="https://cdn.photographylife.com/wp-content/uploads/2014/06/Nikon-D810-Image-Sample-6.jpg" height="50px" weight="50px">
+        &thinsp;
+        <img src="https://cdn.photographylife.com/wp-content/uploads/2014/06/Nikon-D810-Image-Sample-6.jpg" height="50px" weight="50px">
+
+        &hellip; &middot; Middle dot - Separators
+             &bull; Bullet Point
+             &#8377;
+      </section>
+
   </main>
 
   <aside>
@@ -53,6 +80,7 @@
   <footer id="copyRight">
     <p>&copy; 2026 My Website</p>
   </footer>
+
 
 </body>
 </html>
@@ -117,5 +145,41 @@
                     Groups content	| Standalone content
                     Depends on page	| Independent
                     Needs heading	| Reusable
+    # Typographic Text - Special Symbols
+            - &#8377; -> Rupee Symbol
+            - &lt; ->  Less Than <
+            - &gt; ->  Greater Than>
+            - &ge; ->  Grater Tahn Or Equals to >=
+            - &copy; -> Copy right Symbol - Legal text
+            - &hellip; -> Horizontal Ellipsis is an HTML entity that displays three dots ( ... ) as a single typographic character.
+            - &middot; -> . Middle dot - Separators
+            - &bull; -> . Bullet -Lists
+            - &ndash; -> - En dash Ranges (1-5)
+            - &mdash; -> - Em dash Pause / break
+            - &reg; -> Registered - Branding
+            - &emsp; -> M Em space, Adds a wider space, roughly equal to the width of the letter “M”
+            - &ensp; -> N spce
+            - &thinsp; -> thin space
+            - &nbsp; -> Non-Breaking Space (doesn't wrap)
+            💡🔹 Important Points
+                    * “Does not wrap” means: **the words connected by `&nbsp;` will not split onto separate lines**.
+                    * The **container** can be anything with a width (like `<div>`, `<p>`, `<td>`, etc.).
+                    * If the container is **too narrow**, the browser may **move the whole unbreakable segment** to the next line (or create a horizontal scrollbar if CSS prevents wrapping).
+                    ### 🔹 Quick Visual Table
+                    | Space Type    | Wraps? | Container Example        |
+                    | ------------- | ------ | ------------------------ |
+                    | Normal space  | ✅ Yes  | `<div>`, `<p>`, `<span>` |
+                    | Non-breaking  | ❌ No   | `<div>`, `<p>`, `<span>` |
+                    | En / Em space | ✅ Yes  | Same as above            |
+
+            | Space Type   | HTML Entity | Approx. Width    |
+            | ------------ | ----------- | ---------------- |
+            | Normal space | ` `         | 1 space          |
+            | Non-breaking | `&nbsp;`    | 1 space, no wrap |
+            | En space     | `&ensp;`    | ~2 spaces        |
+            | Em space     | `&emsp;`    | ~4 spaces        |
+            | Thin space   | `&thinsp;`  | ~½ space         |
+
+        
 
 -->
