@@ -7,18 +7,27 @@
 </head>
 <body>
 
-    <h1>Nadiya Syed</h1>
-    <ruby> 明日 
-        <rp>(</rp>
-            <rt>Nadiya</rt>
-        <rp>)</rp>
-    </ruby>
+    <div id = "navigation">
+        <a href="#name">Name</a>
+        <a href="#edu">Education</a>
+        <a href="#skills">Skills</a>
+    </div>
+    
+    <div id="header">
+        <h1 id="name">Nadiya Syed</h1>
+        <a href="mailto:ashrafisyednadiya@gmail.com"> EMAIL </a>
 
-    <img src="images/image.png" height="50px" weight="50px" > <!-- Local Image path -->
-    <!-- Image from online - copy image address/link -->
-    <img src="https://cdn.photographylife.com/wp-content/uploads/2014/06/Nikon-D810-Image-Sample-6.jpg" 
-         height="50px" weight="50px">
-      
+        <ruby> 明日 
+            <rp>(</rp>
+                <rt>Nadiya</rt>
+            <rp>)</rp>
+        </ruby>
+
+        <img src="images/image.png" height="50px" weight="50px" > <!-- Local Image path -->
+        <!-- Image from online - copy image address/link -->
+        <img src="https://cdn.photographylife.com/wp-content/uploads/2014/06/Nikon-D810-Image-Sample-6.jpg" 
+            height="50px" weight="50px">
+     </div> 
     <a href="https://www.linkedin.com/in/nadiya-syed-941b91204/" hreflang="" target="_top">link here</a>
     <h2>About</h2>
     <p></p>
@@ -26,7 +35,7 @@
     <h2>Nested List</h2>
     <ol>
         <li><h3>List under list</h3>
-            <ul>
+            <ul type="square">
                 <li><h5>One</h5></li>
                 <li><h5>Two</h5></li>
             </ul>
@@ -39,24 +48,29 @@
         <h3>Full Stack Developer - Accenture</h3>
 
 
-    <h2>Education</h2>
-        <ul>
-            <li><h3>Graduation</h3></li>
+    <div id="edu">
+        <h2>Education</h2>
+        <ul type="circle">
+            <li>Graduation</li>
             <li><h3>Intermediate</h3></li>
             <li><h3>SSC</h3></li>
         </ul>
-    <h2>Skills</h2>
-        <ol type="i" start = 4>
-            <li><p>HTML</p></li>
-            <li><p>CSS</p></li>
-            <li><p>JS</p></li>
-        </ol>
-    <dl>
-        <dt>HTML</dt>
-        <dd>HyperText Markup Language</dd>
-        <dd>Used to structure web pages</dd>
-    </dl>
+    </div>
 
+    <div id="skills">
+        <h2>Skills</h2>
+            <ol type="i" start = 4>
+                <li><p>HTML</p></li>
+                <li><p>CSS</p></li>
+                <li><p>JS</p></li>
+            </ol>
+        <dl>
+            <dt>HTML</dt>
+            <dd>HyperText Markup Language</dd>
+            <dd>Used to structure web pages</dd>
+        </dl>
+    </div>
+    
     <p>Lorem ipsum dolor sit amet.lorem100 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit temporibus, consequatur voluptate velit, illo excepturi non, veritatis provident dolores incidunt quasi molestiae doloribus quod exercitationem accusantium quaerat dolor! Cumque aperiam quis deleniti animi. Necessitatibus dolorem, beatae magnam dicta quia quos quibusdam ex debitis, soluta molestias nulla corporis nostrum delectus accusamus nemo sequi ad rem numquam illum natus eaque qui quae. Sapiente libero dolorum corporis! Fugit, similique omnis? Distinctio, aut rerum! Sit similique quibusdam dignissimos ratione tenetur dolorum voluptatum nostrum! Vero provident molestiae, recusandae impedit eaque fugiat? Ratione, ipsam laborum accusantium officiis, deserunt dicta maxime quidem quisquam corrupti qui laboriosam sunt!</p>
 
     <a href="#">Top of web page</a>
@@ -67,6 +81,27 @@
         <dt>CSS</dt>
         <dd>Cascading Style Sheets</dd>
     </dl>
+    <hr><p>HR TAG - Horizontal ROW line</p><hr>
+    <s>Strike Through</s>
+    <p>
+        H<sub>2</sub>O
+    </p>
+
+    <p>abbr tag is SEO friendly</p>
+    <abbr title="HyperTextMarkupLang">HTML</abbr>
+
+    <pre>
+        <code> 
+        function greet() {
+        console.log("Hello");
+        }
+        </code>
+    </pre>
+
+    <p>
+        I am reading <cite>Harry Potter</cite>.
+    </p>
+
 
 </body>
 </html>

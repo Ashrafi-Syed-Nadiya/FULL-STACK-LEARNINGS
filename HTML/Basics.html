@@ -22,9 +22,10 @@
      https://developer.mozilla.org/en-US/
      https://www.w3schools.com/html/default.asp
      https://drive.google.com/file/d/1rrEnoARH5hi_ECiHqltxaGVkvePi5hi7/view?usp=sharing/edit?usp=sharing&ouid=114162002956526293509&rtpof=true&sd=true
+     https://html.com/wp-content/uploads/html-cheat-sheet.pdf
 -->
 
-
+<!-- HTML Case Insensitive -->
 <!-- ################  NOTES ################ -->
 
 <!-- 
@@ -48,8 +49,9 @@
             dir="rtl" means right to left
     
     ## HTML Boilerplate <html> <head></head> <body></body></html>
-    ## <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-        The `viewport` meta tag tells the browser how to control the page’s dimensions and scaling, especially on mobile devices.
+    ## Meta - data about data 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        The `viewport` of meta tag tells the browser how to control the page’s dimensions and scaling, especially on mobile devices.
             Sets the visible area (viewport) of a web page
             Controls zoom level and scaling
             Makes the page responsive on different screen sizes
@@ -77,11 +79,12 @@
             | ------------------ | ---------------------------------------------- |
 
     ## Tags -- (keywords present in Angular brackets <> ) Tags are case-insensitive
-        # Singleton Tags
+        # Singleton Tags - (Self closing Tag)
             <br> line break
             <img>, <hr>
+            <meta> metadata tag
 
-        # Paired Tags (Opening tags <tag> and Closing tag </tag>)
+        # Paired Tags - (Container Tags) -- (Opening tags <tag> and Closing tag </tag>)
             <html></html> <head></head> <body></body> <title></title> <h1></h1> till h6 tags
             <p>paragraph</p>
 
@@ -117,6 +120,9 @@
                 <img>   - src (required link-copy image address/image path)
                           height, width in pixels
                 <a>     - href (hyper link reference in Anchor tag), target, hreflang
+                    https://www.geeksforgeeks.org/html/difference-between-normal-links-and-active-links/
+                    active(when clicked- Red underlined), UnVisited(Bue Underlined,  Visited(Purple Underlined)
+                        Mail : <a href="mailto:xxx@xxx.com"> EMAIL </a> -- Prefix mailto: is used to indicate this is email link
                             Ex : href =link or "#" "#top" navigates to top of web page
                             Ex : target (_self, _top, _blank, _parent)
                             | --------- | ------------------- |
@@ -128,7 +134,42 @@
                             | `_blank`  | New tab/window      |
                             ⚠️ A frame is an old HTML concept that allowed a browser window to be split into multiple sections, each loading a different page.
                             🔴 Frames are deprecated and should not be used in modern websites.
+
+    # Text Formatting tags :
+    Attribute / Tag	Use
+        <b>	    Makes text bold (no importance)
+        <strong>Bold + important text
+        <i>	    Italic text
+        <em>	Italic + emphasized text
+        <u>	    Underlines text
+        <mark>	Highlights text
+        <small>	Smaller text
+        <del>	Deleted (strike-through) text
+        <ins>	Inserted text (underline)
+        <sub>	Subscript text
+        <sup>	Superscript text
+        <s>     Strike-through
+        <abbr> tag is used to define an abbreviation or acronym. It helps show the full form when the user hovers over the text. SEO friendly.
+                <abbr title="Full Form">Abbreviation</abbr>
+        <code>  Shows code snippets. Displays text in a monospace font. Helps browsers and screen readers understand it is code
+                <code> is inline by default
+                It does not execute code. Use <pre> for preserving spaces and new lines
+        <pre>   preserves newline spaces in code tag
+        
+        <cite> tag is used to specify the title of a creative work. not Author names.
+
     
+    # DIV tag : Division
+         Grouping multiple elements together -- code readable
+                    
+
+    # Internal Linking:
+        - id : unique attribute identifies elements
+                # is used in anchor<a href="#..."></a> tag to navigate
+
+    # Block and Inline Elements - refer Basics2.html
+    
+        
 -->
 
 
@@ -139,7 +180,7 @@
                 However, in Head Section only on whole element
                 Ex: comment on one word - not possible in head tag ~ <title> _<_!--First Web --_>_ Page</title> 
 
-    Emmet Abbreviation shortcut -- ! esclamation with Enter in VS Code
+    Emmet Abbreviation shortcut -- ! or esclamation with Enter or html:5 in VS Code
     
     lorem command or lorem+n, n is number ex: lorem10
     lipsum.com website
