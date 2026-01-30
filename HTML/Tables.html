@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <!-- CSS STYLE -->
+    <!-- <style>
+        table,tr,th,td {
+            border : 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+    </style> -->
+</head>
+<body>
+    <h1>TABLES</h1>
+    <table border="4">
+        <tr>
+            <th  rowspan="2" >Heading-1</th>
+            <th>Heading-2</th>
+        </tr>
+        
+        <tr>
+            <td colspan="2" >Data-11</td>
+            <td>Data-12</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Data-21</td>
+            <td>Data-22</td>
+        </tr>
+
+        <tr>
+            <td colspan="3">Data 31</td>
+            <td>Data32</td>
+        </tr>
+
+        <tr>
+            <td>Data-41</td>
+        </tr>
+    </table>
+
+    
+</body>
+</html>
+
+<!-- TABLE 📝 -->
+<!-- 
+         ___________________________________________________
+        | Tag         | Description                         |
+        | ----------- | ----------------------------------- |
+        | `<table>`   | Defines the table                   |
+        | `<tr>`      | Table row                           |
+        | `<th>`      | Table header cell (bold & centered) |
+        | `<td>`      | Table data cell                     |
+        | `<caption>` | Table title                         |
+        | `<thead>`   | Header section                      |
+        | `<tbody>`   | Body section                        |
+        | `<tfoot>`   | Footer section                      |
+        -----------------------------------------------------
+
+        => Table and all its tags are BLOCK LEVEL ELEMENTS
+        
+        ### ✅ **Table and its tags are NOT inline elements**
+         ## 🔹 Display type of table elements
+
+        | HTML Tag    | Display Type               |
+        | ----------- | -------------------------- |
+        | `<table>`   | **Block-level element**    |
+        | `<tr>`      | Table row (not inline)     |
+        | `<th>`      | Table cell (table-cell)    |
+        | `<td>`      | Table cell (table-cell)    |
+        | `<thead>`   | Table header group         |
+        | `<tbody>`   | Table body group           |
+        | `<tfoot>`   | Table footer group         |
+        | `<caption>` | Block-like (table-caption) |
+
+        📌 Makes a cell span multiple columns/rows - <th><td> tag attributes
+            rowspan  - Merge (rows) cells VERTICALLY | |
+            colspan  - Merge (cols) cells HORIZONTALLY =
+
+        📌 **None of these are inline elements.**
+        ## 🔹 Why tables are NOT inline
+        * Inline elements flow **inside text** (`<span>`, `<a>`, `<strong>`)
+        * Tables create **their own layout structure**
+        * Tables **start on a new line** like block elements
+
+        Example:
+
+        ```html
+        Text before
+        <table border="1">
+        <tr><td>Cell</td></tr>
+        </table>
+        Text after
+        ```
+
+        ➡ The table appears on a **new line**, not inline with text.
+
+        ---
+
+        ## 🔹 Correct exam statement
+
+        ✅ **Table and its related tags are block-level / table elements, not inline elements.**
+
+        ---
+
+        ## 🔹 Common inline elements (for comparison)
+
+        * `<span>`
+        * `<a>`
+        * `<b>`
+        * `<i>`
+        * `<img>`
+
+-->
+
+
+<!-- 
+
+Here’s a summary and clarification of the advanced HTML concepts with examples:
+
+<div> Tag: Used as a container to group other elements. Example:
+
+html
+<div>
+  <p>This is inside a div.</p>
+</div>
+Semantic Elements: Tags that describe their meaning, like <h1>, <p>, <ul>. They help with SEO and accessibility.
+
+html
+<h1>Main Title</h1>
+<p>This is a paragraph.</p>
+Internal Links: Navigate within the same page using id and <a href="#id">.
+
+html
+<h2 id="top">Top Section</h2>
+<a href="#top">Go to Top</a>
+Block vs Inline Elements: Block elements (like <div>, <p>) start on a new line; inline elements (like <span>, <img>) stay in the same line.
+
+html
+<p>This is <span style="color:red;">inline</span> text.</p>
+Text Formatting Tags: Use <b> for bold, <i> for italic, <span> for custom styles.
+
+html
+<b>Bold</b> and <i>Italic</i>
+Special Characters: Use HTML entities for reserved or special characters.
+
+html
+< for <, &copy; for ©
+Tables: Structure data using <table>, <tr>, <td>, <th>, and use colspan/rowspan for merging cells.
+
+html
+<table>
+  <tr><th>Name</th><th>Age</th></tr>
+  <tr><td>Alice</td><td>24</td></tr>
+</table>
+Chrome Dev Tools: Inspect and debug HTML/CSS/JS in the browser using right-click > Inspect or CTRL+SHIFT+C.
+
+-->
